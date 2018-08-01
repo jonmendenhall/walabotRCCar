@@ -69,35 +69,6 @@ nowCarId = 0
 nowCarGear = 0
 
 
-
-def test():
-	car = cars[1]
-	while True:
-		car.reverse = False
-		car.throttle = 100
-		car.sendPacket()
-		time.sleep(0.5)
-
-		car.steering = 50
-		car.sendPacket()
-		time.sleep(0.8)
-
-		car.steering = -50
-		car.sendPacket()
-		time.sleep(0.8)
-
-		car.reverse = True
-		car.throttle = 100
-		car.steering = 0
-		car.sendPacket()
-		time.sleep(1)
-
-test()
-exit()
-
-
-
-
 # called when a WebSocket connects to this server
 # just makes sure only the packets from one mobile device are being used
 
