@@ -1,4 +1,0 @@
-wget https://s3.eu-central-1.amazonaws.com/walabot/WalabotInstaller/Latest/walabot_maker_1.2.0_raspberry_arm32.deb -O walabot-maker.deb
-sudo dpkg -i walabot-maker.deb
-sudo python3 -m pip install WalabotAPI --no-index --find-links="/usr/share/walabot/python/"
-python3 -m pip install spidev RPi.GPIO git+https://github.com/Pithikos/python-websocket-server zeroconf
